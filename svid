@@ -1,0 +1,14 @@
+#!/bin/bash
+
+function saveIt
+{
+
+	name=$1
+
+	mv ~/Temp/output.mkv ~/Videos/$name.mkv
+#	rm ~/Temp/output.mkv
+	#echo $name
+
+}
+
+saveIt $1 
