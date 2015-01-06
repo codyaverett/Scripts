@@ -1,7 +1,7 @@
 Shell-Scripts
 =============
 
-Scripts I wrote to make my life easier.  They are easy to rename, so if you want to use them you may rename them to what ever you feel like.
+Scripts I wrote to make my life easier.  They are easy to rename, so if you want to use them you may modify or rename them to what ever you feel like.
 
 	TODO:
 		Comment all current 4 scripts to make them human readable
