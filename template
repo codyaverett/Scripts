@@ -7,12 +7,13 @@ TEMPLATE_ROOTDIR="/home/${USER}/Templates/"
 function getTemplate {
 #TODO: Add catch if file doesn't exist
      echo " -Getting Template ${FILENAME}"
+     cp -R ${TEMPLATE_ROOTDIR}/${FILENAME} .
 }
 
 function addTemplate {
 #TODO Add catch if file doesn't exist
     echo " -Adding Template ${FILENAME}"
-    cp ./${FILENAME} ${TEMPLATE_ROOTDIR} 
+    cp -R ./${FILENAME} ${TEMPLATE_ROOTDIR} 
 }
 
 function backupTemplate {
