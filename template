@@ -24,6 +24,10 @@ function showDirectory {
     ls ${TEMPLATE_ROOTDIR}
 }
 
+function gotoTemplateDirectory {
+     cd ${TEMPLATE_ROOTDIR}
+}
+
 function showUsage {
     echo "USAGE: template <argument> <filename>"
     echo "    ARGUMENTS"
@@ -31,6 +35,7 @@ function showUsage {
     echo "        add"
     echo "       show"
     echo "     backup"
+    echo "         go"
 }
 
 function main {
@@ -40,6 +45,7 @@ function main {
         add)addTemplate;;
         show)showDirectory;;
         backup)echo "backup?\n";;
+        go)gotoTemplateDirectory;;
         *)echo "Invalid Argument";
           showUsage;;
     esac
