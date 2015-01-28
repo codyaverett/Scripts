@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+
+<html ng-app="myApp">
+<head>
+    <script type="text/javascript" src="include/angular.js"></script>
+    <script type="text/javascript" src="include/angular-touch.js"></script>
+    <script type="text/javascript" src="scripts/app.js"></script>
+</head>
+    
+<body ng-controller='mainController'>
+    <input type='password' ng-model='name' />
+    <p></p>
+    Whatever Case {{ name }}
+    <p></p>
+    LowerCase {{ lowercaseDood() }}
+</body>
+</html>

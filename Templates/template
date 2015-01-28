@@ -1,0 +1,47 @@
+#!/bin/bash
+
+FUNCTION_ARG=$1
+FILENAME=$2
+TEMPLATE_ROOTDIR="/home/${USER}/Templates/"
+
+function getTemplate {
+#TODO: Add catch if file doesn't exist
+     echo " -Getting Template ${FILENAME}"
+}
+
+function addTemplate {
+#TODO Add catch if file doesn't exist
+    echo " -Adding Template ${FILENAME}"
+    cp ./${FILENAME} ${TEMPLATE_ROOTDIR} 
+}
+
+function backupTemplate {
+    echo "derp"
+}
+
+function showDirectory {
+    ls ${TEMPLATE_ROOTDIR}
+}
+
+function showUsage {
+    echo "USAGE: template <argument> <filename>"
+    echo "    ARGUMENTS"
+    echo "        get"
+    echo "        add"
+    echo "       show"
+    echo "     backup"
+}
+
+function main {
+
+    case ${FUNCTION_ARG} in
+        get)getTemplate;;
+        add)addTemplate;;
+        show)showDirectory;;
+        backup)echo "backup?\n";;
+        *)echo "Invalid Argument";
+          showUsage;;
+    esac
+}
+
+main
